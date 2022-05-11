@@ -19,7 +19,7 @@
 
 main {
   margin: 10px;
-  font-family: "Lora";
+  font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,7 @@ main {
   margin: 30px;
   margin-top: 50px;
   width: 400px;
+  font-family: "Lora";
 }
 .intro__hi {
   font-size: 20px;
@@ -53,11 +54,12 @@ main {
   border: 1px solid #111;
   border-radius: 5px;
   box-shadow: 1px 1px;
-  font-family: "Teko";
+  font-family: Helvetica, sans-serif;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .work-button i {
   background-color: rgb(161, 222, 226);
