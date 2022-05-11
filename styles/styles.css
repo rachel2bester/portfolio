@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Teko:wght@600&display=swap");
-* {
+header * {
   font-family: "Teko";
-  color: rgb(2, 95, 80);
-}/*# sourceMappingURL=styles.css.map */
+  color: #025f50;
+}

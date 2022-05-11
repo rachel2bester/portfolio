@@ -1,0 +1,8 @@
+@use "./variables" as *;
+
+header {
+    * {
+        font-family: $primary-font;
+        color: $primary-color;
+    }
+}

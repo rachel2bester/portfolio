@@ -1,6 +1,2 @@
-@use "./variables" as *;
 
-* {
-    font-family: $primary-font;
-    color: $primary-color;
-}
+@use "_header";
