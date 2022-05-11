@@ -1,0 +1,19 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.skills-grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+
+    width: 400px;
+    height: 400px;
+    margin-top: 10px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        align-items: center;
+    }
+}
