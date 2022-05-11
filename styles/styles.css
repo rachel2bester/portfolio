@@ -25,13 +25,6 @@ main {
   align-items: center;
 }
 
-.skills {
-  margin-top: 60px;
-  font-family: "Lora";
-  color: rgb(2, 95, 80);
-  font-size: 35px;
-}
-
 * {
   margin: 0;
   padding: 0p;
@@ -105,4 +98,11 @@ main {
 .footer__email {
   font-family: "Lora";
   font-size: 15px;
+}
+
+.heading {
+  margin-top: 60px;
+  font-family: "Lora";
+  color: rgb(2, 95, 80);
+  font-size: 35px;
 }/*# sourceMappingURL=styles.css.map */

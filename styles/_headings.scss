@@ -1,0 +1,10 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.heading {
+    margin-top: 60px;
+    font-family: $secondary-font;
+
+    color: $primary-color;
+    font-size: 35px;
+}
