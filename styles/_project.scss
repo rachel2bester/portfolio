@@ -1,0 +1,55 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.project-container {
+    
+    display: grid;
+
+    
+
+    &__project {
+        
+        margin-top: 15px;
+
+        * {
+            margin-top: 15px;
+        }
+        
+        &__image {
+            width: $phone-width;
+            align-content: center;
+        }
+
+        &__heading {
+            font-size: 20px;
+            font-family: $primary-font;
+            color: $primary-color;
+            font-weight: bold;
+        }
+
+        &__description {
+            width: $phone-width;
+        }
+
+        &__buttons {
+            display: flex;
+            
+            justify-content: flex-start;
+            font-size: 15px;
+            font-weight: bold;
+
+            &__button{
+                margin-right: 15px;
+                margin-top: 15px;
+                @include flexCenter();
+                i {
+                    @include flexCenter();
+                }
+
+                &:hover {
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+}

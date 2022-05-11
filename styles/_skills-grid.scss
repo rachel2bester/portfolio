@@ -5,8 +5,8 @@
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 
-    width: 400px;
-    height: 400px;
+    width: $phone-width;
+    height: $phone-width;
     margin-top: 10px;
 
     &__box {

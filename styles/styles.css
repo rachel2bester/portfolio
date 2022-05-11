@@ -18,11 +18,55 @@
 }
 
 main {
-  margin: 10px;
+  margin: 20px;
   font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.project-container {
+  display: grid;
+}
+.project-container__project {
+  margin-top: 15px;
+}
+.project-container__project * {
+  margin-top: 15px;
+}
+.project-container__project__image {
+  width: 400px;
+  align-content: center;
+}
+.project-container__project__heading {
+  font-size: 20px;
+  font-family: "Lora";
+  color: rgb(2, 95, 80);
+  font-weight: bold;
+}
+.project-container__project__description {
+  width: 400px;
+}
+.project-container__project__buttons {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: bold;
+}
+.project-container__project__buttons__button {
+  margin-right: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container__project__buttons__button i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-container__project__buttons__button:hover {
+  opacity: 50%;
 }
 
 * {
