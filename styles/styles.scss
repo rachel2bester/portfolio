@@ -1,6 +1,5 @@
 @use "header";
-
-* {
-    margin: 0;
-    padding: 0p;
-}
+@use "main";
+@use "project";
+@use "body";
+@use "intro";

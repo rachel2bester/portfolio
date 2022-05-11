@@ -1,0 +1,7 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+main {
+    margin: 10px;
+    font-family: $secondary-font;
+}

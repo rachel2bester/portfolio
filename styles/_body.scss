@@ -1,0 +1,8 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+* {
+    margin: 0;
+    padding: 0p;
+    background-color: $white;
+}

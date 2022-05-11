@@ -1,0 +1,17 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.intro {
+    margin: 30px;
+    margin-top: 80px;
+
+    &__hi {
+        font-size: 20px;
+        opacity: 60%;
+    }
+
+    &__desc {
+        margin-top: 10px;
+        font-size: 60px;
+    }
+}

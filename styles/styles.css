@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Teko:wght@600&display=swap");
 .header {
   display: grid;
-  grid-template-columns: 50px 200px 1fr 50px;
+  grid-template-columns: 50px 220px 1fr 50px;
   height: 50px;
   background-color: #EEE;
   color: rgb(2, 95, 80);
@@ -15,12 +15,30 @@
   align-items: center;
 }
 .header__name {
-  font-size: 35px;
-  font-weight: lighter;
-  font-family: "Teko";
+  font-weight: bold;
+  font-family: "Lora";
+}
+
+main {
+  margin: 10px;
+  font-family: "Lora";
 }
 
 * {
   margin: 0;
   padding: 0p;
+  background-color: #EEE;
+}
+
+.intro {
+  margin: 30px;
+  margin-top: 80px;
+}
+.intro__hi {
+  font-size: 20px;
+  opacity: 60%;
+}
+.intro__desc {
+  margin-top: 10px;
+  font-size: 60px;
 }/*# sourceMappingURL=styles.css.map */
