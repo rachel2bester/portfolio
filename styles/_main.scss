@@ -4,4 +4,7 @@
 main {
     margin: 10px;
     font-family: $secondary-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

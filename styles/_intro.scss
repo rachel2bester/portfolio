@@ -3,7 +3,8 @@
 
 .intro {
     margin: 30px;
-    margin-top: 80px;
+    margin-top: 50px;
+    width: 400px;
 
     &__hi {
         font-size: 20px;
@@ -12,6 +13,6 @@
 
     &__desc {
         margin-top: 10px;
-        font-size: 60px;
+        font-size: 80px;
     }
 }
