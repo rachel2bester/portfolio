@@ -45,4 +45,22 @@ main {
 .intro__desc {
   margin-top: 10px;
   font-size: 80px;
+}
+
+.work-button {
+  height: 50px;
+  width: 380px;
+  background-color: rgb(161, 222, 226);
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 5px;
+  box-shadow: 1px 1px;
+  font-family: "Teko";
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-button i {
+  background-color: rgb(161, 222, 226);
 }/*# sourceMappingURL=styles.css.map */
