@@ -10,14 +10,11 @@
     margin: 0px;
     padding: 0px;
     
-    * {
-        font-size: 35px;
-        @include flexCenter();   
-    }
-
     &__name {
         font-weight: bold;
         font-family: $secondary-font;
+        font-size: 35px;
+        @include flexCenter(); 
     }
 
 
