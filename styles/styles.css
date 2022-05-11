@@ -151,4 +151,17 @@ main {
   font-family: "Lora";
   color: rgb(2, 95, 80);
   font-size: 35px;
+}
+
+.about-me {
+  width: 400px;
+  margin-bottom: 50px;
+}
+.about-me__img {
+  width: 400px;
+  margin-top: 20px;
+}
+.about-me__desc {
+  font-family: Helvetica, sans-serif;
+  margin-top: 15px;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,17 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.about-me {
+    width: $phone-width;
+    margin-bottom: 50px;
+
+    &__img {
+        width: $phone-width;
+        margin-top: 20px;
+    }
+
+    &__desc {
+        font-family: $secondary-font;
+        margin-top: 15px;
+    }
+}
