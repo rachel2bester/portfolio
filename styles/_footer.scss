@@ -17,11 +17,12 @@
     
     &__contact-info {
         @include flexCenter();
+        font-size: 30px;
     }
 
     &__email {
         font-family: $primary-font;
-        font-size: 15px;
+        font-size: 20px;
     }
 
 }
