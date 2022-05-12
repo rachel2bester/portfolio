@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Teko:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Lora:ital@1&display=swap");
 .header {
   display: grid;
   grid-template-columns: 50px 220px 1fr 50px;
@@ -10,8 +10,8 @@
 }
 .header__name {
   font-weight: bold;
-  font-family: "Lora";
-  font-size: 35px;
+  font-family: "DM Sans";
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
 
 main {
   margin: 20px;
-  font-family: Helvetica, sans-serif;
+  font-family: "DM Sans";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,9 +38,14 @@ main {
   width: 300px;
   align-content: center;
 }
+.project-container__project__lang {
+  color: #BAE8E8;
+  font-size: 10;
+  text-transform: capitalize;
+}
 .project-container__project__heading {
-  font-size: 20px;
-  font-family: "Lora";
+  font-size: 30px;
+  font-family: "Inter";
   color: #170F49;
   font-weight: bold;
 }
@@ -52,6 +57,7 @@ main {
   justify-content: flex-start;
   font-size: 15px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 .project-container__project__buttons__button {
   margin-right: 15px;
@@ -79,7 +85,7 @@ main {
   margin: 30px;
   margin-top: 30px;
   width: 300px;
-  font-family: "Lora";
+  font-family: "Inter";
 }
 .intro__hi {
   font-size: 20px;
@@ -96,19 +102,17 @@ main {
   height: 50px;
   width: 285px;
   background-color: #BAE8E8;
-  color: #000;
-  border: 1px solid #000;
+  color: #170F49;
+  border: 1px solid #170F49;
   border-radius: 5px;
-  box-shadow: 1px 1px black;
-  font-family: Helvetica, sans-serif;
-  font-size: 30px;
+  box-shadow: 1px 1px #170F49;
+  font-family: "Inter";
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #FFF;
   font-weight: bold;
-  font-size: 22px;
 }
 .work-button i {
   background-color: #BAE8E8;
@@ -119,7 +123,7 @@ main {
   grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
   width: 300px;
   height: 300px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 .skills-grid__box {
   display: flex;
@@ -137,7 +141,7 @@ main {
   fill: #BAE8E8;
 }
 .skills-grid__box__language {
-  font-family: Helvetica, sans-serif;
+  font-family: "DM Sans";
   color: #000;
 }
 
@@ -147,30 +151,34 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #FFF;
+  color: #BAE8E8;
   height: 200px;
 }
 .footer * {
   background-color: #170F49;
-  padding: 10px;
+  padding: 5px;
 }
 .footer__contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "Inter";
 }
 .footer__email {
-  font-family: "Lora";
+  font-family: "Inter";
   font-size: 20px;
 }
 
 .headings {
-  margin-top: 60px;
-  font-family: "Lora";
+  margin-top: 100px;
+  font-family: "Inter";
   font-weight: bold;
   color: #170F49;
   font-size: 25px;
+  border-bottom: 11px solid #BAE8E8;
+  display: inline-block;
+  line-height: 0.4;
 }
 
 .underline {
@@ -188,6 +196,6 @@ main {
   margin-top: 20px;
 }
 .about-me__desc {
-  font-family: Helvetica, sans-serif;
+  font-family: "DM Sans";
   margin-top: 15px;
 }/*# sourceMappingURL=styles.css.map */

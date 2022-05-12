@@ -5,17 +5,15 @@
     height: 50px;
     width: $phone-width*0.95;
     background-color: $secondary-color;
-    color: $black;
-    border: 1px solid $black;
+    color: $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 5px;
-    box-shadow: 1px 1px black;
-    font-family: $secondary-font;
-    font-size: 30px;
+    box-shadow: 1px 1px $primary-color;
+    font-family: $primary-font;
+    font-size: 18px;
     @include flexCenter();
     text-decoration: none;
-    color: $white;
     font-weight: bold;
-    font-size: 22px;
 
 
     i {

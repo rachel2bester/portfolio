@@ -12,8 +12,8 @@
     
     &__name {
         font-weight: bold;
-        font-family: $primary-font;
-        font-size: 35px;
+        font-family: $secondary-font;
+        font-size: 25px;
         @include flexCenter(); 
     }
 
