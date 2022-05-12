@@ -19,11 +19,23 @@
         @include flexCenter();
         font-size: 40px;
         font-family: $primary-font;
+        * {
+            &:hover {
+                color: $white;
+            }
+
+        }
+
+        
     }
 
     &__email {
         font-family: $primary-font;
         font-size: 20px;
+        
+        &:hover {
+            color: $white;
+        }
     }
 
 }
