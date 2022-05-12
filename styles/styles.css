@@ -126,30 +126,17 @@ main {
   align-items: center;
 }
 .skills-grid__box__image {
-  color: red !important;
+  color: rgb(82, 82, 82);
   width: 40px;
   height: 40px;
   font-size: 40px;
 }
+.skills-grid__box__image__path {
+  fill: rgb(82, 82, 82);
+}
 .skills-grid__box__language {
   font-family: Helvetica, sans-serif;
   color: #111;
-}
-
-.icon {
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-}
-
-.bem {
-  background: url("../images/Bem.svg");
-}
-
-.spring {
-  background: url("../images/spring-boot.svg");
 }
 
 .footer {

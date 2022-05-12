@@ -18,10 +18,16 @@
 
 
         &__image {
-            color: red !important;
+            color: $secondary-color;
+
             width: 40px;
             height: 40px;
+            
             font-size: 40px;
+
+            &__path{
+                fill: $secondary-color;
+            }
         }
 
         &__language {
@@ -31,24 +37,4 @@
     }
 }
 
-
-    
-
-.icon {
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-
-    
-}
-
-.bem {
-    background: url('../images/Bem.svg');
-}
-
-.spring {
-    background: url('../images/spring-boot.svg');
-}
 
