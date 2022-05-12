@@ -10,11 +10,13 @@
     &__hi {
         font-size: 20px;
         opacity: 60%;
+        color:$primary-color;
     }
 
     &__desc {
         margin-top: 10px;
         font-size: 60px;
+        color:$primary-color;
     }
 
 }

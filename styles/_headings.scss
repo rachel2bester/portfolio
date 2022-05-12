@@ -9,3 +9,9 @@
     color: $primary-color;
     font-size: 25px;
 }
+
+.underline {
+    border-bottom: 27px solid $secondary-color;
+    display: inline-block;
+    line-height: 0.4;
+}
