@@ -3,18 +3,38 @@
 
 .header {
     display: grid;
-    grid-template-columns: 50px 220px 1fr 50px;
+    grid-template-columns: 50px 180px 1fr 50px;
     height: 50px;
     background-color: $white;
     color: $primary-color;
     margin: 0px;
     padding: 0px;
+
+    * {
+        @include flexCenter;
+    }
     
     &__name {
         font-weight: bold;
         font-family: $secondary-font;
         font-size: 25px;
-        @include flexCenter(); 
+    }
+
+    &__logo {
+        font-size: 30px;
+        
+        p {
+            border-bottom: 17px solid $secondary-color;
+            display: inline-block;
+            line-height: 0.2;
+            font-family: $tertiary-font;
+
+        }
+    }
+
+    &__menu {
+        font-size: 25px;
+
     }
 
 
