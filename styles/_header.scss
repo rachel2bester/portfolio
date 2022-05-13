@@ -64,8 +64,8 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
-    /*tablet*/
+@media only screen and (min-width:768px) {
+    /*tablet and desktop*/
     .header {
         grid-template-columns: 50px 180px 1fr 110px 110px 110px 125px;
         grid-template-areas: "logo name gap home about projects get-in-touch";

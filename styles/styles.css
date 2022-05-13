@@ -50,7 +50,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
-  /*tablet*/
+  /*tablet and desktop*/
   .header {
     grid-template-columns: 50px 180px 1fr 110px 110px 110px 125px;
     grid-template-areas: "logo name gap home about projects get-in-touch";
@@ -146,7 +146,7 @@ main {
     width: 300px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*tablet*/
   .project-container {
     display: flex;
@@ -174,12 +174,12 @@ main {
     display: none !important;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hide-on-tablet {
     display: none !important;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .hide-on-desktop {
     display: none !important;
   }
@@ -225,7 +225,7 @@ main {
     margin-bottom: 30px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*tablet*/
   .intro {
     width: 740px;
@@ -242,6 +242,38 @@ main {
   }
   .intro__button {
     margin-bottom: 90px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  /*desktop*/
+  .intro {
+    background-color: transparent;
+  }
+  .intro * {
+    background-color: transparent;
+  }
+  .intro__desc {
+    font-size: 60px;
+    width: 550px;
+  }
+  .intro__img {
+    align-self: flex-end;
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    display: inline-block;
+  }
+  .intro__button {
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
   }
 }
 .button {
@@ -362,7 +394,7 @@ main {
     justify-content: center;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*tablet*/
   .footer {
     flex-direction: row-reverse;
