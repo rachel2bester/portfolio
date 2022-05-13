@@ -340,7 +340,7 @@ main {
   width: 300px;
   margin-top: 20px;
   border: 1px solid black;
-  height: 300px;
+  height: 350px;
 }
 .about-me__desc {
   font-family: "DM Sans";
@@ -351,5 +351,15 @@ main {
   /*tablet*/
   .about-me {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 740px;
+  }
+  .about-me__desc {
+    width: 333px;
+  }
+  .about-me__image {
+    width: 333px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -9,7 +9,7 @@
         width: $phone-width;
         margin-top: 20px;
         border: 1px solid black;
-        height: 300px;
+        height: 350px;
 
     }
 
@@ -23,6 +23,17 @@
     /*tablet*/
     .about-me {
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: $tablet-width;
+
+        &__desc {
+            width: 0.45 * $tablet-width;
+        }
+        &__image {
+            width: 0.45 * $tablet-width;
+        }
     }
 
 }
