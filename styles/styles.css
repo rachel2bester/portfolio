@@ -164,8 +164,8 @@ main {
   }
 }
 * {
-  margin: 0;
-  padding: 0p;
+  margin: 0px;
+  padding: 0px;
   background-color: #FFF;
 }
 
@@ -179,6 +179,11 @@ main {
     display: none !important;
   }
 }
+@media only screen and (min-width: 768px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
 .intro {
   margin: 30px;
   padding: 10px;
@@ -186,10 +191,10 @@ main {
   flex-direction: column;
   align-items: flex-start;
   font-family: "Inter";
-  background-color: rgb(194, 194, 194);
+  background-color: #F7FAFA;
 }
 .intro * {
-  background-color: rgb(194, 194, 194);
+  background-color: #F7FAFA;
 }
 .intro__hi {
   font-size: 20px;
@@ -302,11 +307,23 @@ main {
     height: 300px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*tablet*/
   .skills-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 740px;
+  }
+  .skills-grid__box__image {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /*desktop*/
+  .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 1024px;
   }
 }
 .footer {
