@@ -8,10 +8,21 @@
     &__img {
         width: $phone-width;
         margin-top: 20px;
+        border: 1px solid black;
+        height: 300px;
+
     }
 
     &__desc {
         font-family: $secondary-font;
         margin-top: 15px;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    /*tablet*/
+    .about-me {
+        display: flex;
+    }
+
 }

@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Lora:ital@1&display=swap");
-@media only screen and (max-width: 768px) {
-  .hide-on-phone {
-    display: none;
-  }
-}
 .header {
   display: grid;
   height: 50px;
@@ -44,7 +39,7 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /*phone*/
   .header {
     grid-template-columns: 50px 180px 1fr 50px;
@@ -97,9 +92,6 @@ main {
   align-items: center;
 }
 
-.project-container {
-  display: grid;
-}
 .project-container__project {
   margin-top: 15px;
 }
@@ -107,7 +99,6 @@ main {
   margin-top: 15px;
 }
 .project-container__project__image {
-  width: 300px;
   align-content: center;
 }
 .project-container__project__lang {
@@ -121,9 +112,6 @@ main {
   color: #170F49;
   font-weight: bold;
   margin-top: 0px;
-}
-.project-container__project__description {
-  width: 300px;
 }
 .project-container__project__buttons {
   display: flex;
@@ -146,12 +134,51 @@ main {
   opacity: 50%;
 }
 
+@media only screen and (max-width: 767px) {
+  /*phone*/
+  .project-container {
+    width: 300px;
+  }
+  .project-container__project__image {
+    width: 300px;
+  }
+  .project-container__project__description {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*tablet*/
+  .project-container {
+    display: flex;
+    justify-content: space-around;
+    width: 95vw;
+  }
+  .project-container__project__heading {
+    font-size: 33px;
+  }
+  .project-container__project__image {
+    width: 207.2px;
+  }
+  .project-container__project__description {
+    width: 207.2px;
+  }
+}
 * {
   margin: 0;
   padding: 0p;
   background-color: #FFF;
 }
 
+@media only screen and (max-width: 767px) {
+  .hide-on-phone {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+}
 .intro {
   margin: 30px;
   font-family: "Inter";
@@ -166,7 +193,7 @@ main {
   color: #170F49;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /*phone*/
   .intro {
     width: 300px;
@@ -242,7 +269,7 @@ main {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /*phone*/
   .skills-grid {
     grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
@@ -312,8 +339,17 @@ main {
 .about-me__img {
   width: 300px;
   margin-top: 20px;
+  border: 1px solid black;
+  height: 300px;
 }
 .about-me__desc {
   font-family: "DM Sans";
   margin-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  /*tablet*/
+  .about-me {
+    display: flex;
+  }
 }/*# sourceMappingURL=styles.css.map */

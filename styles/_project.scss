@@ -2,8 +2,6 @@
 @use "./mixin" as *;
 
 .project-container {
-    
-    display: grid;
 
     &__project {
         
@@ -14,7 +12,6 @@
         }
         
         &__image {
-            width: $phone-width;
             align-content: center;
         }
 
@@ -22,7 +19,6 @@
             color: $secondary-color;
             font-size: 15px;
             text-transform: uppercase;
-            
         }
 
         &__heading {
@@ -31,10 +27,6 @@
             color: $primary-color;
             font-weight: bold;
             margin-top: 0px;
-        }
-
-        &__description {
-            width: $phone-width;
         }
 
         &__buttons {
@@ -54,13 +46,55 @@
                 i {
                     margin-bottom: 3px;
                 }
-            
-
-                
 
                 &:hover {
                     opacity: 50%;
                 }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    /*phone*/
+    .project-container {
+        
+        width: $phone-width;
+
+        &__project {
+
+            &__image {
+                width: $phone-width;
+            }
+    
+            &__description {
+                width: $phone-width;
+            }
+        }
+    }
+
+
+}
+@media only screen and (min-width:768px) {
+    /*tablet*/
+    .project-container {
+        display: flex;
+        justify-content: space-around;
+        width: 95vw;
+
+        &__project {
+
+            &__heading {
+                font-size: 33px;
+            }
+
+            &__image {
+                width: $tablet-width * 0.28;
+            }
+    
+            &__description {
+                width: $tablet-width * 0.28;
             }
         }
     }
