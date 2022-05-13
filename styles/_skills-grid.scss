@@ -5,6 +5,12 @@
     display: grid;
     margin-top: 50px;
 
+    &__intro{
+        width: $tablet-width * 0.5;
+        margin-top: 30px;
+        text-align: center;
+    }
+
     &__box {
         display: flex;
         flex-direction: column;
@@ -21,7 +27,7 @@
             
             font-size: 60px;
 
-            &__path{
+            &__path {
                 fill: $secondary-color;
             }
         }
@@ -29,6 +35,7 @@
         &__language {
             font-family: $secondary-font;
             color: $primary-color;
+            font-size: 15px;
         }
     }
 }

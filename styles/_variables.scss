@@ -12,5 +12,11 @@ $tertiary-font: "Lora";
 $phone-width: 300px;
 $tablet-width: 740px;
 
+@media only screen and (max-width:768px){
+    .hide-on-phone {
+        display: none;
+    }
+}
+
 
 
