@@ -429,6 +429,27 @@ main {
     margin-right: 20px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  /*desktop*/
+  .footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__email {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .footer__contact-info {
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  .footer__rights {
+    font-size: 12px;
+    font-family: "Inter";
+    opacity: 60%;
+  }
+}
 .headings {
   margin-top: 100px;
   font-family: "Inter";
@@ -461,7 +482,7 @@ main {
   margin-top: 15px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*tablet*/
   .about-me {
     display: flex;
@@ -473,7 +494,28 @@ main {
   .about-me__desc {
     width: 333px;
   }
-  .about-me__image {
+  .about-me__img {
     width: 333px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about-me {
+    /*desktop*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 1024px;
+  }
+  .about-me__desc {
+    width: 460.8px;
+  }
+  .about-me__img {
+    width: 400px;
+    height: 400px;
+  }
+  .about-me__heading {
+    margin: 0;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

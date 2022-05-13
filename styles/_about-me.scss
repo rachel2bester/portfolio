@@ -18,8 +18,7 @@
         margin-top: 15px;
     }
 }
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) and (max-width:1023px) {
     /*tablet*/
     .about-me {
         display: flex;
@@ -31,9 +30,34 @@
         &__desc {
             width: 0.45 * $tablet-width;
         }
-        &__image {
+        &__img {
             width: 0.45 * $tablet-width;
         }
     }
 
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-me {
+        /*desktop*/
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: $desktop-width;
+
+        &__desc {
+            width: 0.45 * $desktop-width;
+        }
+        &__img {
+            width: 400px;
+            height: 400px;
+        }
+
+        &__heading {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+    }
 }

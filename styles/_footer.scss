@@ -65,3 +65,29 @@
     }
 
 }
+
+@media only screen and (min-width:1024px) {
+    /*desktop*/
+    .footer {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        &__email {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        &__contact-info {
+            margin-right: 20px;
+            font-size: 30px;
+        }
+
+        &__rights {
+            font-size: 12px;
+            font-family: $primary-font;
+            opacity: 60%;
+        }
+    }
+
+}
