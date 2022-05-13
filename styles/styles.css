@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Lora:ital@1&display=swap");
 .header {
   display: grid;
-  grid-template-columns: 50px 180px 1fr 50px;
   height: 50px;
   background-color: #FFF;
   color: #170F49;
   margin: 0px;
   padding: 0px;
+  font-family: "DM Sans";
 }
 .header * {
   display: flex;
@@ -17,6 +17,7 @@
   font-weight: bold;
   font-family: "DM Sans";
   font-size: 25px;
+  border: 2px black solid;
 }
 .header__logo {
   font-size: 30px;
@@ -30,7 +31,59 @@
 .header__menu {
   font-size: 25px;
 }
+.header__get-in-touch__button {
+  font-size: 3px !important;
+}
+.header__home, .header__about, .header__projects {
+  border: 1px black solid;
+}
+.header__home:hover, .header__about:hover, .header__projects:hover {
+  font-weight: bold;
+}
 
+.header__logo {
+  grid-area: logo;
+}
+.header__name {
+  grid-area: name;
+}
+.header__menu {
+  grid-area: menu;
+}
+.header__home {
+  grid-area: home;
+}
+.header__about {
+  grid-area: about;
+}
+.header__get-in-touch {
+  grid-area: get-in-touch;
+}
+.header__gap {
+  grid-area: gap;
+}
+.header__project {
+  grid-area: project;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: 50px 180px 1fr 50px;
+    grid-template-areas: "logo name gap menu";
+  }
+  .header__projects, .header__get-in-touch, .header__about, .header__home {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: 50px 180px 1fr 125px 125px 125px 125px;
+    grid-template-areas: "logo name gap home about projects get-in-touch";
+  }
+  .header__menu {
+    display: none;
+  }
+}
 main {
   margin: 20px;
   font-family: "DM Sans";
@@ -111,9 +164,7 @@ main {
   color: #170F49;
 }
 
-.work-button {
-  height: 50px;
-  width: 285px;
+.button {
   background-color: #BAE8E8;
   color: #170F49;
   border: 1px solid #170F49;
@@ -127,10 +178,9 @@ main {
   text-decoration: none;
   font-weight: bold;
 }
-.work-button i {
+.button i {
   background-color: #BAE8E8;
 }
-
 .skills-grid {
   display: grid;
   grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
