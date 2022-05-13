@@ -4,11 +4,9 @@
 .footer {
     background-color: $primary-color;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     color: $secondary-color;
-    height: 200px;
+    height: 150px;
 
     * {
         background-color: $primary-color;
@@ -31,10 +29,38 @@
 
     &__email {
         font-family: $primary-font;
-        font-size: 20px;
+        font-size: 18px;
         
         &:hover {
             color: $white;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    /*phone*/
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    /*tablet*/
+    .footer {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        &__email {
+            margin-left: 20px;
+        }
+
+        &__contact-info {
+            margin-right: 20px;
         }
     }
 

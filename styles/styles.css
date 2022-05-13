@@ -287,11 +287,8 @@ main {
 .footer {
   background-color: #170F49;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: #BAE8E8;
-  height: 200px;
+  height: 150px;
 }
 .footer * {
   background-color: #170F49;
@@ -309,12 +306,34 @@ main {
 }
 .footer__email {
   font-family: "Inter";
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer__email:hover {
   color: #FFF;
 }
 
+@media only screen and (max-width: 767px) {
+  /*phone*/
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*tablet*/
+  .footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__email {
+    margin-left: 20px;
+  }
+  .footer__contact-info {
+    margin-right: 20px;
+  }
+}
 .headings {
   margin-top: 100px;
   font-family: "Inter";
