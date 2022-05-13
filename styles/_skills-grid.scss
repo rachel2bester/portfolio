@@ -3,10 +3,6 @@
 
 .skills-grid {
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
-
-    width: $phone-width;
-    height: $phone-width;
     margin-top: 50px;
 
     &__box {
@@ -32,9 +28,28 @@
 
         &__language {
             font-family: $secondary-font;
-            color: $black;
+            color: $primary-color;
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    /*phone*/
+    .skills-grid{
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        width: $phone-width;
+        height: $phone-width;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*tablet*/
+    .skills-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: $tablet-width;
+
+    }
+
 }
 
 

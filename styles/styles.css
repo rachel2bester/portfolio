@@ -40,6 +40,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+  /*phone*/
   .header {
     grid-template-columns: 50px 180px 1fr 50px;
     grid-template-areas: "logo name gap menu";
@@ -49,6 +50,7 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  /*tablet*/
   .header {
     grid-template-columns: 50px 180px 1fr 110px 110px 110px 125px;
     grid-template-areas: "logo name gap home about projects get-in-touch";
@@ -147,8 +149,6 @@ main {
 
 .intro {
   margin: 30px;
-  margin-top: 30px;
-  width: 300px;
   font-family: "Inter";
 }
 .intro__hi {
@@ -158,10 +158,30 @@ main {
 }
 .intro__desc {
   margin-top: 10px;
-  font-size: 60px;
   color: #170F49;
 }
 
+@media only screen and (max-width: 768px) {
+  /*phone*/
+  .intro {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .intro__desc {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*tablet*/
+  .intro {
+    width: 740px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+  .intro__desc {
+    font-size: 52px;
+  }
+}
 .button {
   background-color: #BAE8E8;
   color: #170F49;
@@ -184,14 +204,11 @@ main {
 .button:hover {
   font-weight: bold;
   color: #170F49;
-  border: 2px solid #170F49;
+  border: 1.5px solid #170F49;
 }
 
 .skills-grid {
   display: grid;
-  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
-  width: 300px;
-  height: 300px;
   margin-top: 50px;
 }
 .skills-grid__box {
@@ -211,9 +228,24 @@ main {
 }
 .skills-grid__box__language {
   font-family: "DM Sans";
-  color: #000;
+  color: #170F49;
 }
 
+@media only screen and (max-width: 768px) {
+  /*phone*/
+  .skills-grid {
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*tablet*/
+  .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 740px;
+  }
+}
 .footer {
   background-color: #170F49;
   display: flex;
@@ -262,6 +294,11 @@ main {
   line-height: 0.4;
 }
 
+@media only screen and (max-width: 768px) {
+  .hide-on-phone {
+    display: none;
+  }
+}
 .about-me {
   width: 300px;
   margin-bottom: 50px;

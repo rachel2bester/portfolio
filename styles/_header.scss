@@ -53,6 +53,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+    /*phone*/
     .header {
         grid-template-columns: 50px 180px 1fr 50px;
         grid-template-areas: "logo name gap menu";
@@ -63,7 +64,8 @@
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+    /*tablet*/
     .header {
         grid-template-columns: 50px 180px 1fr 110px 110px 110px 125px;
         grid-template-areas: "logo name gap home about projects get-in-touch";

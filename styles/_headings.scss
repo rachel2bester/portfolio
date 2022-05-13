@@ -19,3 +19,9 @@
     display: inline-block;
     line-height: 0.4;
 }
+
+@media only screen and (max-width:768px){
+    .hide-on-phone {
+        display: none;
+    }
+}
