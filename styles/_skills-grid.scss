@@ -6,7 +6,6 @@
     margin-top: 50px;
 
     &__intro{
-        width: $tablet-width * 0.5;
         margin-top: 30px;
         text-align: center;
     }
@@ -58,6 +57,10 @@
             height: 40px;      
             font-size: 40px;
         }
+
+        &__intro {
+            width: $tablet-width * 0.5;
+        }
         
 
     }
@@ -68,6 +71,11 @@
     .skills-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         width: $desktop-width;
+
+        &__intro {
+            width: $desktop-width* 0.5;
+        }
+
     }
 
 }

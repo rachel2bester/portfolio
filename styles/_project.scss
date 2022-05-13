@@ -5,7 +5,7 @@
 
     &__project {
         
-        margin-top: 15px;
+        margin-top: 40px;
 
         * {
             margin-top: 15px;
@@ -95,6 +95,29 @@
     
             &__description {
                 width: $tablet-width * 0.28;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .project-container {
+        display: flex;
+        justify-content: space-around;
+        width: 95vw;
+
+        &__project {
+
+            &__heading {
+                font-size: 33px;
+            }
+
+            &__image {
+                width: $desktop-width * 0.28;
+            }
+    
+            &__description {
+                width: $desktop-width * 0.28;
             }
         }
     }
