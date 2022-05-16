@@ -25,7 +25,8 @@
   border-bottom: 17px solid #BAE8E8;
   display: inline-block;
   line-height: 0.2;
-  font-family: "Lora";
+  font-family: "DM Sans";
+  font-weight: bolder;
 }
 .header__menu {
   font-size: 25px;
@@ -173,10 +174,10 @@ main {
     font-size: 33px;
   }
   .project-container__project__image {
-    width: 286.72px;
+    width: 280px;
   }
   .project-container__project__description {
-    width: 286.72px;
+    width: 280px;
   }
 }
 * {
@@ -260,7 +261,7 @@ main {
     margin-bottom: 90px;
   }
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1024px) {
   /*desktop*/
   .intro {
     background-color: transparent;
@@ -275,7 +276,7 @@ main {
   .intro__img {
     align-self: flex-end;
     height: 500px;
-    width: 400px;
+    width: 350px;
     border: 1px solid black;
     display: inline-block;
   }
@@ -289,7 +290,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1024px;
+    width: 1000px;
   }
 }
 .button {
@@ -373,10 +374,10 @@ main {
   /*desktop*/
   .skills-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 1024px;
+    width: 1000px;
   }
   .skills-grid__intro {
-    width: 512px;
+    width: 500px;
   }
 }
 .footer {
@@ -472,16 +473,20 @@ main {
   margin-bottom: 50px;
 }
 .about-me__img {
-  width: 300px;
   margin-top: 20px;
   border: 1px solid black;
-  height: 350px;
 }
 .about-me__desc {
   font-family: "DM Sans";
   margin-top: 15px;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-me__img {
+    width: 300px;
+    height: 350px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /*tablet*/
   .about-me {
@@ -505,10 +510,10 @@ main {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    width: 1024px;
+    width: 1000px;
   }
   .about-me__desc {
-    width: 460.8px;
+    width: 450px;
   }
   .about-me__img {
     width: 400px;
