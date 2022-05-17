@@ -86,7 +86,7 @@
 }
 
 main {
-  margin: 20px;
+  /*margin: 20px;*/
   font-family: "DM Sans";
   display: flex;
   flex-direction: column;
@@ -276,7 +276,8 @@ main {
   }
   .intro__img {
     align-self: flex-end;
-    height: 500px;
+    margin-top: 30px;
+    height: 450px;
     width: 350px;
     border: 1px solid black;
     display: inline-block;
@@ -437,6 +438,7 @@ main {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
   }
   .footer__email {
     margin-left: 20px;
@@ -453,7 +455,7 @@ main {
   }
 }
 .headings {
-  margin-top: 100px;
+  margin-top: 80px;
   font-family: "Inter";
   font-weight: bold;
   color: #170F49;
@@ -523,5 +525,17 @@ main {
   .about-me__heading {
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  .about-me-container {
+    background-color: #F7FAFA;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .about-me-container * {
+    background-color: #F7FAFA;
   }
 }/*# sourceMappingURL=styles.css.map */

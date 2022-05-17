@@ -6,11 +6,8 @@
     margin-bottom: 50px;
 
     &__img {
-        
         margin-top: 20px;
         border: 1px solid black;
-        
-
     }
 
     &__desc {
@@ -26,7 +23,6 @@
             height: 350px;
         }
     }
-    
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
@@ -45,7 +41,6 @@
             width: 0.45 * $tablet-width;
         }
     }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -60,6 +55,7 @@
         &__desc {
             width: 0.45 * $desktop-width;
         }
+
         &__img {
             width: 400px;
             height: 400px;
@@ -69,6 +65,17 @@
             margin: 0;
             margin-bottom: 20px;
         }
+    }
 
+    .about-me-container {
+        background-color: $grey;
+        width: 100vw;
+        @include flexCenter;
+        margin-bottom: 0px;
+
+        * {
+            background-color: $grey;
+        }
     }
 }
+   
