@@ -11,8 +11,11 @@
             margin-top: 15px;
         }
         
-        &__image {
-            align-content: center;
+        &__image-container {
+            display: flex;
+            margin:0px;
+            justify-content: center;
+            align-items: flex-start;
         }
 
         &__lang {
@@ -96,6 +99,7 @@
                 width: $tablet-width * 0.28;
             }
         }
+            
     }
 }
 
