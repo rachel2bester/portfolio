@@ -277,9 +277,7 @@ main {
   .intro__img {
     align-self: flex-end;
     margin-top: 30px;
-    height: 450px;
-    width: 350px;
-    border: 1px solid black;
+    height: 400px;
     display: inline-block;
   }
   .intro__button {
@@ -287,7 +285,6 @@ main {
     margin-top: 30px;
     margin-left: 20px;
   }
-
   .intro-container {
     display: flex;
     justify-content: center;
@@ -398,16 +395,22 @@ main {
   align-items: center;
   font-size: 40px;
   font-family: "Inter";
+  width: 250px;
 }
 .footer__contact-info *:hover {
   color: #FFF;
 }
 .footer__email {
   font-family: "Inter";
-  font-size: 18px;
+  font-size: 16px;
+  width: 250px;
 }
 .footer__email:hover {
   color: #FFF;
+}
+.footer__rights {
+  width: 250px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -443,6 +446,7 @@ main {
   .footer__email {
     margin-left: 20px;
     font-size: 15px;
+    text-align: center;
   }
   .footer__contact-info {
     margin-right: 20px;
@@ -526,7 +530,6 @@ main {
     margin: 0;
     margin-bottom: 20px;
   }
-
   .about-me-container {
     background-color: #F7FAFA;
     width: 100vw;

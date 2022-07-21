@@ -1,5 +1,5 @@
 @use "./variables" as *;
-@use "./mixin" as *;
+@use "./mixins" as *;
 
 .about-me {
     width: $phone-width;

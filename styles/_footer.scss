@@ -1,5 +1,5 @@
 @use "./variables" as *;
-@use "./mixin" as *;
+@use "./mixins" as *;
 
 .footer {
     background-color: $primary-color;
@@ -11,12 +11,14 @@
     * {
         background-color: $primary-color;
         padding: 5px;
+        
     }
     
     &__contact-info {
         @include flexCenter();
         font-size: 40px;
         font-family: $primary-font;
+        width: 250px;
         * {
             &:hover {
                 color: $white;
@@ -26,11 +28,16 @@
 
     &__email {
         font-family: $primary-font;
-        font-size: 18px;
-        
+        font-size: 16px;
+        width: 250px;
         &:hover {
             color: $white;
         }
+    }
+
+    &__rights{
+        width: 250px;
+        text-align: center;
     }
 
 }
@@ -74,6 +81,7 @@
         &__email {
             margin-left: 20px;
             font-size: 15px;
+            text-align: center;
         }
 
         &__contact-info {

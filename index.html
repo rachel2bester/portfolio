@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rachel Bester Portfolio</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/74bbe0b0c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-        <div class="header__logo "><p>RB</p></div>
+        <div class="header__logo "><p>&lt/&gt</p></div>
         <div class="header__name">Rachel Bester</div>
         <a class="header__menu"><i class="fa-solid fa-bars"></i></a>
         <a class="header__home">Home</a>
-        <a class="header__about">About</a>
-        <a class="header__projects">Projects</a>
-        <div class="header__get-in-touch"><a class="header__get-in-touch__button button">Get in Touch</a></div>
+        <a class="header__about" href="#about-me">About</a>
+        <a class="header__projects" href="#projects">Projects</a>
+        <div class="header__get-in-touch"><a class="header__get-in-touch__button button" href="#contact-info">Get in Touch</a></div>
         <div class="header__gap"></div>
     </header>
 
@@ -27,10 +27,10 @@
                 <h3 class="intro__desc">A <span class="underline hide-on-phone hide-on-tablet">Junior Software </span><span class="underline hide-on-phone hide-on-tablet">Developer</span><span class="hide-on-desktop">Junior</span> <span class="underline hide-on-desktop hide-on-phone">Software Developer</span><span class="underline hide-on-desktop hide-on-tablet">Software</span><span class="underline hide-on-desktop hide-on-tablet">Developer</span> based in the UK.</h3>   
                 <a href=#projects class="intro__button button">Take a look at my work &nbsp &nbsp<i class='fa-solid fa-arrow-turn-down'></i></a>
             </div>
-            <img src="#" alt="Rachel Bester" class="intro__img hide-on-phone hide-on-tablet">
+            <img src="./images/me.jpg" alt="Rachel Bester" class="intro__img hide-on-phone hide-on-tablet">
         </div>
         
-        
+
         <h4 class="headings">Technical skills</h4>
 
         <p class="skills-grid__intro hide-on-phone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam magnam officiis cumque vel voluptatibus.</p>
@@ -79,6 +79,7 @@
                 <p class="skills-grid__box__language">Spring Boot</p>
             </div>
         </div>
+
 
         <h5 class="headings" id="projects"><br>My Projects</h5>
 
@@ -132,9 +133,11 @@
             </div>
         </div>
         
+
         <h6 class="headings hide-on-desktop">About Me</h6>
+        
         <div class="about-me-container">
-            <div class="about-me ">
+            <div class="about-me " id="about-me">
                 <img class="about-me__img" src="#" alt="Rachel Bester">
                 <div>
                     <h7 class="about-me__heading headings hide-on-tablet hide-on-phone">About Me</h7>
@@ -155,10 +158,10 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__contact-info">
-            <a class="footer__contact-info__button" src="#" alt="Git Hub"><i class="fa-brands fa-github"></i></a>
-            <a class="footer__contact-info__button" src="#" alt="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a class="footer__contact-info__button" src="#" alt="CV">CV</a>
+        <div class="footer__contact-info" id="contact-info">
+            <a class="footer__contact-info__button" src="https://github.com/rachel2bester" alt="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="footer__contact-info__button" src="https://www.linkedin.com/in/rachel2bester/" alt="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <!-- <a class="footer__contact-info__button" src="#" alt="CV">CV</a> -->
         </div>
         <div class="footer__rights hide-on-phone hide-on-tablet">All Rights Reserved. 2022.</div>
         <div class="footer__email">rachel2bester@gmail.com</div>
